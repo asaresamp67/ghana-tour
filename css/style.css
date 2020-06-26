@@ -34,8 +34,122 @@ body {
       rgba(126, 213, 111, 0.808),
       rgba(40, 180, 133, 0.801)
     ),
-    url("../img/hero.jpg");
+    url("../img/nkrumah.jpg");
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  position: relative;
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 70px;
+}
+.main-heading {
+  color: #fff;
+  backface-visibility: hidden;
+}
+/* .text-box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-title {
+  display: block;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 88px;
+  text-transform: uppercase;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.sub-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 18px;
+  text-transform: capitalize;
+  animation: moveInRight 2s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.btn {
+  margin-top: 30px;
+  text-align: center;
+}
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-white::after {
+  background-color: #fff;
+}
+.btn:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
 }
