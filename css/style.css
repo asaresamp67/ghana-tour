@@ -4,152 +4,135 @@ On Ghana Tour
 25-06-2020
 
 ***/
-
 /*
 COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
 */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
+  box-sizing: border-box;
   color: #777;
   font-family: "lato", sans-serif;
-  font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
-  padding: 30px;
-}
+  padding: 3rem; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.808),
-      rgba(40, 180, 133, 0.801)
-    ),
-    url("../img/nkrumah.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.801)), url("../img/nkrumah.jpg");
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-  position: relative;
-}
-.logo-box {
+  position: relative; }
+
+.header__logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
-}
-.logo {
-  height: 70px;
-}
-.main-heading {
-  color: #fff;
-  backface-visibility: hidden;
-}
+  top: 4rem;
+  left: 4rem; }
+
+.header__logo {
+  height: 4rem; }
+
+.heading {
+  color: #eee;
+  backface-visibility: hidden; }
+
 /* .text-box {
   display: grid;
   align-items: center;
   justify-content: center;
   text-align: center;
 } */
-
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-.main-title {
+  transform: translate(-50%, -50%); }
+
+.heading-main--title {
   display: block;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bolder;
-  letter-spacing: 88px;
+  letter-spacing: 8.8rem;
   text-transform: uppercase;
   animation-name: moveInLeft;
   animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-.sub-title {
+  animation-timing-function: ease-out; }
+
+.heading-sub--title {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 18px;
+  letter-spacing: 1.8rem;
   text-transform: capitalize;
-  animation: moveInRight 2s ease-out;
-}
+  animation: moveInRight 2s ease-out; }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
-  }
+    transform: translateX(-10rem); }
   50% {
-    transform: translateX(20px);
-  }
+    transform: translateX(2rem); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
-  }
+    transform: translateX(10rem); }
   50% {
-    transform: translateX(-20px);
-  }
+    transform: translateX(-2rem); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
+
 .btn {
-  margin-top: 30px;
-  text-align: center;
-}
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-align: center; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
-  position: relative;
-}
+  position: relative; }
+
 .btn:hover {
-  transform: translateY(-3px);
-}
+  transform: translateY(-0.3rem); }
+
 .btn:active {
-  transform: translateY(-1px);
-}
+  transform: translateY(-0.1rem); }
+
 .btn-white {
   background-color: #fff;
-  color: #777;
-}
+  color: #777; }
+
 .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
-}
+  transition: all 0.4s; }
+
 .btn-white::after {
-  background-color: #fff;
-}
+  background-color: #fff; }
+
 .btn:hover::after {
   transform: scale(1.5);
-  opacity: 0;
-}
+  opacity: 0; }
