@@ -2,7 +2,7 @@
   position: relative;
 
   &_photo {
-    border-radius: 2px;
+    border-radius: 0.5rem;
     box-shadow: 0 1.5rem 2rem rgba($color-black, 0.3);
     width: 50%;
     position: absolute;
@@ -22,10 +22,9 @@
       top: 11rem;
     }
     &:hover {
-      transform: scale(1.4);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      transform: scale(1.4), translateY(-5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.8);
       outline: 0.5rem solid $color-primary;
-
       z-index: 2;
     }
   }
