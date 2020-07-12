@@ -12,6 +12,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .heading-main--title {
   display: block;
   font-size: 4rem;
@@ -22,6 +23,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
+
 .heading-sub--title {
   display: block;
   font-size: 2rem;
@@ -37,19 +39,22 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(
-    to left,
-    $color-primary-light,
-    $color-primary-dark
-  );
+  background-image: linear-gradient(to left,
+      $color-primary-light,
+      $color-primary-dark);
   display: inline-block;
   color: transparent;
   -webkit-background-clip: text;
   transition: all 0.2s;
   letter-spacing: 0.4rem;
+
   &:hover {
     transform: scale(1, 2);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &_info {
+    color: $color-white;
   }
 }
 
@@ -61,6 +66,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
