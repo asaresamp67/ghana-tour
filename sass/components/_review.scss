@@ -1,0 +1,59 @@
+.review {
+ clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+ background-color: rgba($color-white, .6);
+ border-radius: 3px;
+ box-shadow: 0 3rem 6rem rgba($color-black, .3);
+ font-size: $default-font-size;
+ margin: 0 auto;
+ padding: 2rem 6rem 2rem 6rem;
+ padding-left: 9rem;
+ width: 75%;
+
+ &_shape {
+
+  clip-path: circle(50% at 50% 50%);
+  float: left;
+  height: 15rem;
+  position: relative;
+  width: 15rem;
+  shape-outside: circle(50% at 50% 50%);
+  transform: translateX(-3rem);
+
+ }
+
+ &_image {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.2);
+  transition: all .5s;
+  backface-visibility: hidden;
+ }
+
+ &_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 28%);
+  font-size: $default-font-size;
+  font-weight: 500;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .5s;
+  opacity: 0;
+ }
+
+ &:hover &_caption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+ }
+
+ &:hover &_image {
+  transform: translateX(-4rem) scale(1);
+  opacity: .6;
+
+ }
+
+ &:focus &_image {
+  outline: none;
+ }
+}

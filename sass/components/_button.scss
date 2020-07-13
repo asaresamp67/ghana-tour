@@ -3,6 +3,7 @@
   margin-top: 3rem;
   text-align: center;
 }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -13,16 +14,20 @@
   transition: all 0.2s;
   position: relative;
 }
+
 .btn:hover {
   transform: translateY(-0.3rem);
 }
+
 .btn:active {
   transform: translateY(-0.1rem);
 }
+
 .btn-white {
   background-color: #fff;
   color: $color-prmary-grey;
 }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -35,9 +40,11 @@
   z-index: -1;
   transition: all 0.4s;
 }
+
 .btn-white::after {
   background-color: #fff;
 }
+
 .btn:hover::after {
   transform: scale(1.5);
   opacity: 0;
@@ -56,10 +63,13 @@
     box-shadow: 0 0.5rem 1rem rgba($color-black, 1);
     transform: translateY(0);
   }
+
   &:hover {
     background-color: $color-primary;
     color: $color-white;
     box-shadow: 0 1rem 1rem rgba($color-black, 1);
     transform: translateY(-4px);
   }
+
+
 }
