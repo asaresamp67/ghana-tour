@@ -416,6 +416,45 @@ body {
   .review:focus .review_image {
     outline: none; }
 
+.footer {
+  background-color: #333;
+  font-size: 1.3rem;
+  padding: 18rem; }
+  .footer_logo-box {
+    margin-bottom: 8rem;
+    text-align: center; }
+  .footer_logo {
+    width: 15rem;
+    height: auto; }
+  .footer_list {
+    list-style: none; }
+  .footer_item {
+    display: inline-block; }
+    .footer_item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer_link:link, .footer_link:visited {
+    background-color: #333;
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .3s;
+    backface-visibility: hidden; }
+  .footer_link:active, .footer_link:hover {
+    color: #55c57a;
+    text-transform: capitalize;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    backface-visibility: hidden; }
+  .footer_navigation {
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer_copyright {
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.801)), url("../img/nkrumah.jpg");
