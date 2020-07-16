@@ -1,3 +1,5 @@
+// Section review
+
 .review {
  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
  background-color: rgba($color-white, .6);
@@ -15,8 +17,9 @@
   float: left;
   height: 15rem;
   position: relative;
-  width: 15rem;
   shape-outside: circle(50% at 50% 50%);
+  width: 15rem;
+
   transform: translateX(-3rem);
 
  }
