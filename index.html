@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghana || Tour</title>
+  <title>Ghana | Tour</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
   <link rel="stylesheet" href="css/icon-font-styles.css" />
   <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
@@ -13,6 +13,29 @@
 </head>
 
 <body>
+  <!--Navigation Section-->
+  <div class="navigation">
+    <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation_label">
+      <span class="navigation_icon">&nbsp;</span>
+    </label>
+    <div class="navigation_background">&nbsp;</div>
+
+    <nav class="navigation_nav">
+      <ul class="navigation_list">
+        <li class="navigation_item"><a href="#ghana" class="navigation_link"><span>01</span>About Ghana</a></li>
+        <li class="navigation_item"><a href="#ghana" class="navigation_link"><span>02</span>Our History</a></li>
+        <li class="navigation_item"><a href="#tourist" class="navigation_link"><span>03</span>Tourist Site</a></li>
+        <li class="navigation_item"><a href="#reviews" class="navigation_link"><span>04</span>Reviews</a></li>
+        <li class="navigation_item"><a href="#enquiry" class="navigation_link"><span>05</span>Enquiry</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <!--End Navigation Section-->
   <!--Header section-->
   <header>
     <div class="header">
@@ -119,7 +142,7 @@
 
     <!--Start-Tour-Section-->
 
-    <section class="section-tour">
+    <section class="section-tour" id="tourist">
       <div class="row">
         <div class="ut-center-text ut-margin-botton-big">
           <h2 class=" heading-secondary">Most popular tours</h2>
@@ -230,7 +253,7 @@
     <!--End-Tour-Section-->
 
     <!--Review Section-->
-    <section class="section-reviews">
+    <section class="section-reviews" id="reviews">
       <div class="bg_video">
         <video class="bg_video--content" autoplay muted loop>
           <source src="img/Agua-natural.mp4" type="video/mp4">
@@ -281,7 +304,7 @@
     </section>
     <!--End of Review Section-->
     <!--Start Booking Section-->
-    <section class="section_book">
+    <section class="section_book" id="enquiry">
       <div class="row">
         <div class="ut-center-text ut-margin-botton-big">
           <h2 class=" heading-secondary heading-secondary_info">make enquiry about ghana</h2>

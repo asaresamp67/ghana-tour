@@ -1,68 +1,59 @@
 .form {
-
- &_group:not(:last-child) {
-  margin-bottom: 2rem;
-
- }
-
- &_input {
-  border: none;
-  border-radius: 2px;
-  border-bottom: .3rem solid transparent;
-  background-color: rbga(&color-white, 0.5);
-  font-family: inherit;
-  color: inherit;
-  font-size: 1.6rem;
-  padding: 1.5rem 2rem;
-  display: block;
-  width: 95%;
-  transition: all .3s;
-
-  &:focus {
-   outline: none;
-   box-shadow: 0 1rem 2rem rgba($color-black, .3);
-   border-bottom: .3rem solid $color-primary;
+  &_group:not(:last-child) {
+    margin-bottom: 2rem;
   }
 
-  &:focus:invalid {
-   border-bottom: .3rem solid $color-secondary-dark;
+  &_input {
+    border: none;
+    border-radius: 2px;
+    border-bottom: 0.3rem solid transparent;
+    background-color: rbga(&color-white, 0.5);
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    display: block;
+    width: 95%;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+      border-bottom: 0.3rem solid $color-primary;
+    }
+
+    &:focus:invalid {
+      border-bottom: 0.3rem solid $color-secondary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
   }
 
-  &::-webkit-input-placeholder {
-   color: $color-grey-dark-2;
+  &_label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
   }
 
- }
+  &_input:placeholder-shown + &_label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
 
- &_label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s;
- }
+  &_radio-group {
+    width: 49%;
+    display: inline-block;
+  }
 
- &_input:placeholder-shown+&_label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem);
- }
-
- &_radio-group {
-  width: 49%;
-  display: inline-block;
- }
-
- &_radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  padding-left: .5rem;
-
- }
-
-
-
-
-
+  &_radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding-left: 0.5rem;
+  }
 }

@@ -6,32 +6,29 @@ On Ghana Tour
 
 ***/
 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "base/animation";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'components/bg_video';
+@import 'components/button';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/features';
+@import 'components/form';
+@import 'components/review';
 
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/navigation';
 
-@import "components/bg_video";
-@import "components/button";
-@import "components/card";
-@import "components/composition";
-@import "components/features";
-@import "components/form";
-@import "components/review";
-
-
-@import "layout/footer";
-@import "layout/header";
-@import "layout/grid";
-
-
-@import "pages/home";
+@import 'pages/home';
 
 /*
 COLORS:
