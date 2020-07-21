@@ -623,6 +623,16 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup_close:link, .popup_close:visited {
+    font-size: 3rem;
+    color: #333;
+    text-decoration: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5em;
+    display: inline-block; }
+  .popup_close:active, .popup_close:hover {
+    color: #28b485; }
   .popup_content {
     width: 75%;
     background-color: #fff;
